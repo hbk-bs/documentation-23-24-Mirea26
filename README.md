@@ -1,14 +1,8 @@
-# documentation-template
+# Dokumentation von Mirea Cernota
 
-template repo for semester documentation
+HBK Braunschweig_
+WS 23/24_
+Digitale Kommunikation_
+bei Dozent: Fabian Morón Zifas
 
-## Todo:
-
-- [ ] Add a short description of this repos content.
-- [ ] Make sure to add a license to your project. https://choosealicense.com/
-- [ ] Make sure to publish your project via Netlify.com
-- [ ] Make sure to add your images to the `assets/images` folder and link them in your documentation.
-
-## Hints
-
-- Don't reinvent the wheel. Use existing css libraries. Check out this list of classless css libraries: https://github.com/dbohdan/classless-css
+Dies ist die Dokumentationswebsite von Mirea Cernota. Drei ausgewählte Projekte des 1.Semesters Visuelle Kommunikation, aus dem Grundlagenkurs Digitale Kommunikation an der HBK Braunschweig, werden auf dieser Seite dargestellt und erläutert. Was waren die Themen, was wurde gelernt und wie lautet der Code hinter den Projekten? Finde es heraus!
