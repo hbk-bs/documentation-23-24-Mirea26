@@ -1,0 +1,33 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+  }
+
+  canvas {
+    display: block;
+  }
+  
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    /* remove default padding */
+    padding: 0;
+    /* remove default margins */
+    margin: 0 auto;
+} 
+
+.button-container {
+    display:flex;
+    justify-content: space-around;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.button-container button {
+    border: 1px solid #000000;
+    background: none;
+    padding: 10px 20px;
+  }

@@ -5,15 +5,432 @@
 		<meta http-equiv="x-ua-compatible" content="ie=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-		<title>Page Title</title>
+		<title>Dokumentation</title>
 		<meta name="description" content="something" />
 		<meta name="author" content="me" />
 
 		<link rel="stylesheet" type="text/css" href="/style.css" />
+		<!-- <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"> -->
 	</head>
 	<body>
-		<h1>Hello World</h1>
-		<img src="/assets/images/kitten.png" />
 		<script type="text/javascript" src="/index.js"></script>
+
+		<header id="header">
+		<h1>Digitale Kommunikation</h1>
+		<h2>WS 23/24 • HBK Braunschweig • Dokumentation</h2>
+		<h5>Mirea Cernota • Dozent: Fabian Morón Zifas</h5>
+		</header>
+		
+		<div class="button-container">
+			<button id = "buttonToHide1" onclick="colorTheme()">
+				<!-- <figure>	 -->
+			<img src="/assets/images/color-theme.png" alt="color-theme">
+			<!-- <figcaption><h4>Color-Theme </h4></figcaption>
+				</figure> -->
+			</button>
+
+			<button id="buttonToHide2" onclick="smallMutiples()">
+				<!-- <figure> -->
+			<img src="/assets/images/small-mutiples.png" alt="small-mutiples">
+			<!-- <figcaption><h4>Small Mutiples</h4></figcaption>
+				</figure> -->
+			</button>
+
+			<button id="buttonToHide3" onclick="sleepingUncle()">
+				<!-- <figure> -->
+			<img src="assets/images/sleeping-uncle.png" alt="sleeping-uncle">
+			<!-- <figcaption><h4>The Sleeping Uncle</h4></figcaption>
+				</figure> -->
+			</button>
+		</div>
+
+
+		<!--Color-Theme-->
+		<div id="bereich1" style="display: none;">
+			<!-- <h6>Zurück? klicke aufs Bild</h6> -->
+			<h3>Color-Theme</h3>
+			<section id="accordions">
+				<details>
+					<summary>Welche Color-Themes gibt es?</summary>
+					<h4>Monochromatisch</h4>
+					<div class="image-with-text">
+					<img src="/assets/images/monochromatisch.png" alt="monochromatisch">
+					<p>Dieses Farbschema beruht auf einer Farbe, welche durch die Sättigung verändert wird.</p>
+					</div>
+					<h4>Komplementär</h4>
+					<div class="image-with-text">
+					<img src="/assets/images/komplementär.png" alt="komplemetär">
+					<p>Dieses Farbschema umfasst zwei Farben, welche sich im Farbkreis gegenüber liegen. Durch diese Kombination 
+						entsteht ein großer Kontrast.</p>
+					</div>
+					<h4>Analog</h4>
+					<div class="image-with-text">
+						<img src="/assets/images/analog.png" alt="analog">
+					<p>Dieses Farbschema besteht aus drei Farben, die direkt nebeneinander auf dem Farbkreis liegen.</p>
+					</div>
+				</details>
+				<hr>
+				<details>
+					<summary>Code Lexikon</summary>
+					<h4>Verwendete Befehle</h4>
+					<ul>
+						<li><code>ellipseMode(CENTER)</code><p>Dieser Befehl gibt an, von wo aus ein 
+							Kreis oder eine Ellipse gezeichnet werden soll. <code>CENTER</code>,<code>CORNER</code></p></li>
+						<li><code>colorMode()</code><p>Dieser Befehl legt das Farbsystem fest. Möglichkeiten: HSB, HSL oder RGB</p></li>
+						<li><code>const</code><p>Dadruch wird eine konstante, nicht veränderbare Variable festgelegt.</p></li>
+						<li><code>random()</code><p>...umfasst einen zufälligen Wert. Dieser kann in den Klammern eingegrenzt werden. 
+							Zum Beispiel: <code>random(20,50)</code> , ein zufälliger Wert zwischen 20 und 50.</p></li>
+						<li><code>let</code><p>Dies ist eine Variable, die im Verlauf des Codes verändert werden kann.</p></li>
+						<li><code>for (let i = 0; i &lt 9; i++)</code><p>Durch eine for-Schleife, kann ein Teil vom Code mehrmals wiederholt werden.
+							In den Klammern der for-Schleife können drei Aussagen getroffen werden. Die erste umfasst den Startwert der Schleife und
+							die zweite Aussage beschreibt die Bedingung, die erfüllt sein muss, um die Schleife auszuführen. Wird die Bedingung nicht 
+							erfüllt, endet die for-Schleife. Durch die dritte Aussage wird der Startwert aktualisiert. Somit kann festglegt werden, wie 
+							oft ein Code in der for-Schleife ausgeführt werden soll.</p></li>
+						<li><code>noStroke()</code><p>Dieser Befehl entfernt die Outline von Formen, Linien, etc. </p></li>
+						<li><code>fill()</code><p>Dies füllt das/die darauffolgende(n) Element(e) farbig. Das zuvor festgelegte Farbsystem ist dabei entscheidend,
+							was für Werte in die Klammern eingetragen werden.</p></li>
+						<li><code>circle(x, y, d)</code><p>Durch diesen Befehl wird ein Kreis gezeichnet. <i>X</i> und <i>y</i> legen den Ursprung des Kreises auf dem Canvas fest.
+							<i>D</i> entspricht dem Durchmesser.</p></li>
+						<li><code>rect(x, y, w, h)</code><p>Dies zeichnet ein Rechteck. <i>X</i> und <i>y</i> legen den Punkt der linken oberen Ecke fest, <i>w</i> die Länge und <i>h</i> die Höhe.</p></li>
+						<li><p><code>if(...){}; else{}</code></p><p>Dieser Befehl stellt eine Bedingung auf, welche in den Klammern formuliert wird.
+							Wird diese Bedingung erfüllt, wird der Code in den {}-Klammern ausgeführt. Ist die Bedingung nicht erfüllt, wird else{} ausgeführt.</p></li>
+						<p><strong>-ZUSATZ-</strong></p><p><code>else if(...){}</code></p><p>Dieser Zusatz kann zwischen einer if-Bedingung und else{} eingefügt werden. In dem Fall werden dann 
+							die Bedingungen der Reihe nach geprüft und das Zutreffende wird ausgeführt.</p>
+					</ul>
+				</details>
+				<hr>
+				<details>
+					<summary>Code</summary>
+			<pre>
+		<code>
+function setup() {
+	const canvas = createCanvas(200, 700);
+	canvas.parent("sketch");
+	background(255);
+	ellipseMode(CENTER);
+	colorMode(HSB, 360, 100, 100);
+	const myColor = random(0, 360);
+	//Monochromatic
+	const step = 40;
+	const stepII = 25;
+	let saturation = 100;
+	//Complementary
+	const mySecondColor = myColor + 180;
+	const myThirdColor = myColor - 180;
+	//Analogous
+	const angleStep = 20;
+	const barrierI = 360 - angleStep;
+	const barrierII = 360 - angleStep * 2;
+	const myFourthColor = myColor - barrierI;
+			
+	//Monochromatic
+	for (let i = width; i &gt 0; i -= step) {
+		noStroke();
+		fill(myColor, saturation, 100);
+		circle(width / 2, height / 7, i);
+		saturation = saturation - stepII;
+	}
+			
+	//Complementary
+	fill(myColor, 100, 100);
+	rect(0, height / 2.8, width / 2, height / 3.5);
+			
+	if (myColor &gt 180) {
+		fill(myThirdColor, 100, 100);
+		rect(width / 2, height / 2.8, width / 2, height / 3.5);
+	}
+	else {
+		fill(mySecondColor, 100, 100);
+		rect(width / 2, height / 2.8, width / 2, height / 3.5);
+	}
+			
+	//Analogous
+	fill(myColor, 100, 100);
+	circle(width / 2, height / 1.3, width / 3);
+			
+	if (myColor &gt barrierI) {
+		fill(myFourthColor, 100, 100);
+		circle(width / 2, height / 1.2, width / 3);
+		fill(myFourthColor + angleStep, 100, 100);
+		circle(width / 2, height / 1.1, width / 3);
+	}
+	else if (myColor &gt barrierII) {
+		fill(myColor + angleStep, 100, 100);
+		circle(width / 2, height / 1.2, width / 3);
+		fill(myFourthColor, 100, 100);
+		circle(width / 2, height / 1.1, width / 3);
+	}
+	else {
+		fill(myColor + angleStep, 100, 100);
+		circle(width / 2, height / 1.2, width / 3);
+		fill(myColor + angleStep * 2, 100, 100);
+		circle(width / 2, height / 1.1, width / 3);
+	}
+			
+	}
+		</code>
+			</pre>
+				</details>
+				<hr>
+				<details>
+					<summary>Erklärung des Codes</summary>
+					<h4>Monochromatisch</h4>
+					<p>Zu Beginn werden einige Variablen festgelegt. Zum einen die Hauptfarbe, die durch das <code>random()</code> bei jedem neuen Laden 
+						zufällig ausgewählt wird. Für das erste Farbschema, Monochromatisch, werden die Variablen <code>step</code>, <code>stepII</code> und <code>saturation</code> 
+						festgelegt. <code>Step</code> entspricht in welchem Abstand nach innen der nächste Kreis folgen soll. <code>StepII</code> ist der Wert, der von der 
+						Sättigung der Farbe für den nächsten Kreis abgezogen wird. Die Variable <code>saturation</code> entspricht der Sättigung und ist eine 
+						veränderbare Variable, da der Wert, der ihr zu Beginn zugeschrieben wird, im Verlauf des Codes verändert wird.</p>
+					<pre><code>const myColor = random(0, 360);<br>//Monochromatic <br>const step = 40; <br>const stepII = 25;<br>let saturation = 100;</code></pre>
+					<p>Das Farbschema Monochromatisch wird durch eine for-Schleife erzeugt. Die for-Schleife legt fest, wie viele Kreise erstellt werden. Es wird mit dem größten 
+						Kreis angefangen, weshalb <code>i</code> (Durchmesser des Kreises) auf die Breite des Canvas gesetzt wird und dadurch, dass <code>i</code>, durch den zuvor festgelegten <code>step</code>, bei jedem 
+						Durchlauf der Schleife verkleinert wird, entsteht ein immer wieder kleinerer Kreis, bis <code>i</code> = 0. </p>
+					<pre><code>for (let i = width; i &gt 0; i -= step) { <br>}</code></pre>
+					<p>Der Kreis wird mit der zufällig ausgewählten Farbe gefüllt und <code>i</code> beim Durchmesser des Kreises eingetragen. </p>
+					<pre><code>fill(myColor, saturation, 100);<br>circle(width / 2, height / 7, i);</code></pre>
+					<p>Dass die Sättigung abnimmt, liegt daran, dass die <code>saturation</code> Variable, durch den <code>StepII</code>, bei jedem Durchlauf verringert wird. </p>
+					<pre><code>saturation = saturation - stepII;</code></pre>
+					<h4>Komplementär</h4>
+					<p>Für das komplementäre Farbschema werden zwei weitere Variablen angelegt: <code>mySecondColor</code> und <code>myThirdColor</code>. Diese zwei neuen Farben müssen angelegt werden, da 
+						wir uns im <code>colorMode(HSB, 360, 100, 100)</code> befinden. In diesem Fall sind die Farben auf einem Kreis angeordnet. Wenn nun eine Farbe ausgewählt werden soll, geschieht dies durch 
+						die Angabe von der entsprechenden Gradzahl (erste Zahl), der Sättigung (zweite Zahl) und der Helligkeit (dritte Zahl). Ein Kreis besitz 360 Grad. Die gesuchten komplementären Farben liegen demnach 180 Grad auseinander. Wird nun zufällig 
+						als Hauptfarbe die Farbe auf dem Grad 200 gewählt und es werden die 180 drauf gerechnet, würde diese Gradzahl die 360 überschreiten und das Ergebnis wäre nicht die Komplementärfarbe. 
+						Dieses Problem wird im Code durch eine if-Bedingung gelöst. Die Bedingung, die erfüllt werden muss, ist die, dass die Hauptfarbe auf einem Grad liegt, der größer als 180 ist. Ist 
+						dies der Fall wird das Rechteck mit <code>myThirdColor = myColor - 180</code> gefüllt. Es werden 180 Grad abgezogen, da sonst 360 Grad überschritten werden. 
+						Ist die Bedingung nicht erfüllt, wird das Rechteck mit <code>mySecondColor = myColor + 180</code> gefüllt. Dort werden 180 addiert. </p>
+					<pre><code>if (myColor &gt 180) { <br>fill(myThirdColor, 100, 100);<br>rect(width / 2, height / 2.8, width / 2, height / 3.5);<br>} <br>else { <br>fill(mySecondColor, 100, 100);<br>rect(width / 2, height / 2.8, width / 2, height / 3.5);<br>}</code></pre>
+					<h4>Analog</h4>
+					<p>Für das analoge Farbschema werden drei auf dem Farbkreis mit gleichem Abstand nebeneinanderliegende Farben gewählt. Dieser Abstand ist mit der Variablen <code>angleStep</code> festgelegt. Da hier wieder dasselbe Problem auftritt, wie bei dem 
+						komlementären Farbschema, dass die 360 Grad nicht übertreten werden sollen, müssen Barrieren kontrolliert werden. Dafür wurden nochmals zwei Variablen festgelegt: <code>barrierI</code>, für den Fall, dass die Hauptfarbe auf einem so hohen Grad 
+						liegt, dass beide weiteren Farben die 360 Grad überschreiten würden. Und <code>barrierII</code> für den Fall, dass nur die dritte Farbe die 360 überschreitet.</p>
+					<pre><code>const angleStep = 20;<br>const barrierI = 360 - angleStep;<br>const barrierII = 360 - angleStep * 2;</code></pre>
+					<p>Ob die Hauptfarbe in einem der beiden Bereiche liegt, wird durch eine if-Bedingung geprüft. Liegt sie nicht in einem der Bereiche, wird <code>else</code> ausgeführt und auf die Hauptfarbe für den zweiten Kreis der <code>angleStep</code> addiert. Beim dritten Kreis 
+						wird dann zweimal der <code>angleStep</code> auf die Hauptfarbe addiert.</p>
+					<pre><code>if (myColor &gt barrierI) { <br>} <br>else if (myColor &gt barrierII) { <br>} <br>else {<br>fill(myColor + angleStep, 100, 100);<br>circle(width / 2, height / 1.2, width / 3);<br>fill(myColor + angleStep * 2, 100, 100);<br>circle(width / 2, height / 1.1, width / 3);<br>}</code></pre>
+					<p>Liegt die Hauptfarbe im Bereich1, wird der zweite Kreis mit <code>myFourthColor = myColor - barrierI</code> gefüllt. <br>
+						Hier ein Beispiel: Die Hauptfarbe liegt auf dem Grad 350 und somit in Bereich1. Die nächste Farbe müsste bei einem <code>angleStep</code> von 20 Grad bei 10 Grad liegen. <code>myFourthColor</code> berechnet: 350 - (360-20) = 10. <br>
+						Für den dritten Kreis kann dann ganz einfach der <code>angleStep</code> addiert werden.</p>
+					<pre><code>fill(myFourthColor, 100, 100);<br>circle(width / 2, height / 1.2, width / 3);<br>fill(myFourthColor + angleStep, 100, 100);<br>circle(width / 2, height / 1.1, width / 3);</code></pre>
+					<p>Liegt die Hauptfarbe in Bereich2, passiert Ähnliches. Für die erste Farbe des ersten Kreises kann der <code>angleStep</code> ohne Weiteres addiert werden, da der Wert die 360 Grad noch nicht überschreitet. Für die Farbe des dritten Kreises wird 
+						ähnlich vorgegangen wie bei Bereich1. <br>Auch hier ein Beispiel: Die Hauptfarbe liegt auf dem Grad 330. Für den zweiten Kreis werden 20 Grad addiert, was bedeutet, dass die Farbe für den zweiten Kreis bei 350 liegt. Der dritte Kreis 
+						wird mit <code>myFourthColor = myColor - barrierI</code> gefüllt: 350 - (360-20) = 10.</p>
+					<pre><code>fill(myColor + angleStep, 100, 100);<br>circle(width / 2, height / 1.2, width / 3);<br>fill(myFourthColor, 100, 100);<br>circle(width / 2, height / 1.1, width / 3);</code></pre>
+					<hr>
+					<h4>Verbesserungen</h4>
+					<p><i>Mir ist im Nachhinein ein Fehler aufgefallen, den ich im Code nun korrigiert habe. In Bereich2 hatte ich den dritten Kreis nicht mit <code>myFourthColor</code> gefüllt, sondern mit einer weiteren festgelegten Farbe, mit <code>myFifthColor</code>. 
+						Diese Farbe hätte allerdings einen zu großen Abstand zu der Farbe des zweiten Kreisen gehabt. </i></p>
+					<pre><code>const myFifthColor = myColor - barrierII;</code></pre>
+					<p><i>Zudem existiert ein Befehl, den ich hätte nutzen können, um diese umfangreichen Berechnungen zu umgehen. Eben dieser Befehl ist dazu da, die Gradzahlen auf 360 zu begenzen. <br> Der Befehl 
+						lautet: module <code>%</code></i></p>
+					<pre><code>angle = ((angle % 360) + 360) % 360</code></pre>
+				</details>
+				<hr>
+				<details>
+					<summary>Ergebnis</summary>
+					<p><a href="/color-theme/index.html">Klicke hier</a> um das Ergebnis zu sehen!</p>
+				</details>
+				<hr>
+				</section>
+
+		</div>
+
+		<!--Small-Mutiples-->
+		<div id="bereich2" style="display: none;">
+			<h3>Small Mutiples</h3>
+			<section id="accordions2">
+				<details>
+					<summary>Was sind Small Mutiples?</summary>
+					<p>Small Mutiples ist eine Art der Darstellung, bei der mehrere ähnliche Bilder oder Grafiken verwendet werden. Sie sind meist in einem Raster angeordnet. So 
+						können die einzelnen Bilder oder Grafiken untereinander verglichen werden, um Muster oder Unterschiede zu erkennen.
+					</p>
+				</details>
+				<hr>
+				<details>
+					<summary>Code Lexikon</summary>
+					<h4>Verwendet Befehle</h4>
+					<ul>
+						<li><code>let</code><p>Dies ist eine Variable, die im Verlauf des Codes verändert werden kann.</p></li>
+						<li><code>for (let i = 0; i &lt 9; i++)</code><p>Durch eine for-Schleife kann ein Teil vom Code mehrmals wiederholt werden.
+							In den Klammern der for-Schleife können drei Aussagen getroffen werden. Die erste umfasst den Startwert der Schleife und
+							die zweite Aussage beschreibt die Bedingung, die erfüllt sein muss, um die Schleife auszuführen. Wird die Bedingung nicht 
+							erfüllt, endet die for-Schleife. Durch die dritte Aussage wird der Startwert aktualisiert. Somit kann festglegt werden, wie 
+							oft ein Code in der for-Schleife ausgeführt werden soll.</p></li>
+						<li><code>rect(x, y, w, h)</code><p>Dies zeichnet ein Rechteck. <i>X</i> und <i>y</i> legen den Punkt der linken oberen Ecke fest, <i>w</i> die Länge und <i>h</i> die Höhe.</p></li>
+						<li><code>random()</code><p>...umfasst einen zufälligen Wert. Dieser kann in den Klammern eingegrenzt werden. 
+							Zum Beispiel: <code>random(20,50)</code> , ein zufälliger Wert zwischen 20 und 50.</p></li>
+						<li><code>line(x, y, x2, y2)</code><p>Um eine Linie zu erstellen, sind zwei Punkte nötig. Aus dem Grund müssen in den Klammern die Koordinaten des Anfangspunktes
+							und des Endpunktes der Linie eingetragen werden.</p></li>
+						<li><code>push(); pop()</code><p>Diese Befehle separieren den Code, der zwischen ihnen steht, vom restlichen. Dies ist nützlich für den <code>translate()</code> -Befehl.</p></li>
+						<li><code>translate(x, y)</code><p>Dieser Befehl verschiebt den Ursprung des Canvas (ursprünglich oben links in der Ecke) um den angegebenen x- und y-Wert.</p></li>
+					</ul>
+				</details>
+				<hr>
+				<details>
+					<summary>Code</summary>
+		<pre>
+	<code>
+function setup() {
+	const canvas = createCanvas(200, 200);
+	canvas.parent("sketch");
+	background(200);
+			
+	let grafikX = 28;
+	let grafikY = 2;
+			
+	for (let x = 15; x &lt width; x += 50) {
+		for (let y = 15; y &lt height; y += 50) {
+			fill(0);
+			rect(x, y, random(25), 5);
+			line(x - grafikY, y, x - grafikY, y + grafikX);
+			line(x - grafikY, y + grafikX, x + grafikX, y + grafikX);
+			
+			push();
+			translate(0, 10);
+			rect(x, y, random(25), 5);
+			pop();
+			
+			push();
+			translate(0, 20);
+			rect(x, y, random(25), 5);
+			pop();
+			} 
+		} 
+	}</code>
+		</pre>
+				</details>
+				<hr>
+				<details>
+					<summary>Erklärung des Codes</summary>
+					<p>Am Anfang werden zwei Variablen festgelegt. <code>grafikX</code> entspricht der Länge der x- und y-Achse 
+						und <code>grafikY</code> entspricht dem Abstand von der X-Achse zu den Balken. Durch dieses Anlegen der 
+						Variablen kann das Verändern der Größe der Graphen ganz leicht geändert werden, ohne dafür 
+						im kompletten Code die Zahlen auszutauschen. Dies vereinfacht das Ganze nicht nur, sondern verhindert 
+						auch unnötige Flüchtigkeitsfehler.</p> 
+					<pre><code>let grafikX = 28;<br>let grafikY = 2;</code></pre>
+					<p>Daraufhin werden im Code zwei for-Schleifen eingesetzt. Durch die for-Schleifen wird erreicht, 
+						dass die Graphen vervielfältigt werden. Im ersten Teil der for-Schleife wird der x-Wert des ersten 
+						Graphen festgelegt. Durch den zweiten Teil wird das Vervielfältigen auf die Breite des Canvas begrenzt. 
+						Und im dritten Teil wird dann der Abstand zum nächsten Koordinatensystem in x-Richtung festgelegt. Durch 
+						die zweite for-Schleife wird dasselbe erreicht nur in y-Richtung, wodurch dann ein Raster entsteht von 
+						vier mal viel Graphen mit einem Abstand von jeweils 50px. Dadurch muss nicht jeder Graph einzeln gezeichnet 
+						werden. Zudem ist dies praktisch, da die Anzahl der Graphen abhängig von der Größe des Canvas ist. Würde das 
+						Canvas vergrößert werden, würden mehr Graphen gezeichnet werden.</p>
+					<pre><code>for (let x = 15; x &lt width; x += 50) {<br>for (let y = 15; y &lt height; y += 50) {<br>} <br>}</code></pre>
+					<p>Ein einzelner Graph besteht aus einem Koordinatensystem mit einer x- und y-Achse. Diese werden durch zwei Linien 
+						gezeichnet. Hier kommen die anfangs festgelegten Variablen zum Einsatz. Wenn nun der Wert einer Variablen vergrößert 
+						oder verkleinert wird, würden auch die Linien verlängert oder verkürzt werden. Die Namen der Variablen sind 
+						allerdings etwas irreführend. Besser wäre „Länge“ für GrafikX und „Abstand“ für GrafikY.</p>
+					<pre><code>line(x - grafikY, y, x - grafikY, y + grafikX);<br>line(x - grafikY, y + grafikX, x + grafikX, y + grafikX);</code></pre>
+					<p>Zudem wird der erste Balken, mit einer zufälligen aber maximalen Länge von 25px (<code>random(25)</code>) und einer Breite von 5px, 
+						in die Graphen gezeichnet. Der Anfangspunkt (x, y), von wo der erste Balken gezeichnet werden soll, wurde in der for-Schleife vorab festgelegt.
+						Der Balken wird durch den <code>fill</code>-Befehl schwarz gefärbt. 
+						<i>Als Verbesserung könnte die maximale Länge der Balken zusätzlich abhängig von der Länge der Achsen sein. Somit wäre nur das Ändern der Variablen zu beginn nötig,
+						um die Größe des kompletten Graphen zu variieren.</i> </p>
+					<pre><code>fill(0);<br>rect(x, y, random(25), 5);</code></pre>
+					<p>Daraufhin wird durch den <code>translate</code>-Befehl der Ursprung des Canvas um 10px in y-Richtung verschoben, um einen weiteren Balken mit einem Abstand 
+						von 10px zum ersten Balken zu zeichnen. Für den dritten Balken wird ebenso verfahren. Beide Male wird der Code durch den <code>push() ; pop()</code>-Befehl von 
+						dem Rest abgetrennt, sodass das Verschieben des Ursprunges nur für den jeweiligen Balken gilt.</p>
+					<pre><code>push();<br>translate(0, 10);<br>rect(x, y, random(25), 5);<br>pop();</code></pre>
+				</details>
+				<hr>
+				<details>
+					<summary>Ergebnis</summary>
+					<p><a href="/small-mutiples/index.html">Klicke hier</a> um das Ergebnis zu sehen!</p>
+				</details>
+				<hr>
+				</section>
+
+		</div>
+
+		<!--Sleeping-Uncle-->
+		<div id="bereich3" style="display: none;">
+			<h3>The Sleeping Uncle</h3>
+			<section id="accordions3">
+				<details>
+					<summary>Projekt und Frontend-Code</summary>
+					<p>Das Spiel "The Sleeping Uncle" fordert die Spieler heraus, ein Sandwich zuzubereiten, 
+						ohne dabei ein schlafendes Monster zu wecken - eben jenes "The Sleeping Uncle". Um das Sandwich 
+						zu erreichen, muss der Spieler sich über Platten am Boden bewegen. Einige dieser Platten lösen Reaktionen 
+						des Monsters aus oder erzeugen gefährliche Geräusche, die das Monster aufwecken könnten. <br> <br>
+
+						In der Frontend-Code-Gruppe lag die Aufgabe darin, den Code zu entwickeln, der die Auslösung 
+						der Reaktionen des Monsters oder die Wiedergabe der gefährlichen Geräusche mit den entsprechenden Platten 
+						verknüpft. Besonders wichtig war dabei, dass einzelne Videos und Audios abgespielt oder durch andere ersetzt 
+						werden konnten. Anfangs wurde dies im Code über einfache Buttons realisiert, später wurden diese durch Knöpfe 
+						auf einem externen Board ersetzt. <br> <br>
+
+						Eine Herausforderung bestand darin, den Überblick darüber zu behalten, welches Element in welchem Fall durch was 
+						ersetzt werden sollte. Zusätzlich war es erforderlich, nur Ausschnitte eines Audios abzuspielen oder nach dem Abspielen 
+						bestimmter Videos zum Anfangsvideo zurückzukehren. Dies konnte teilweise direkt im Code angegangen werden, jedoch mussten 
+						in einigen Fällen Audios und Videos vorab in After Effects bearbeitet werden, um diese Anforderungen zu erfüllen.</p>
+				</details>
+				<hr>
+				<details>
+					<summary>Vorgehen</summary>
+					<ol>
+						<li>Begonnen wurde mit dem Einfügen von Audio- und Videodateien im Code. Wichtig war dabei, dass diese durch ein Signal abgespielt werden konnten.
+							Dies wurde vorerst provisorisch durch Buttons erziehlt.</li>
+						<li>Als weiterer Schritt sollten nun durch Knopfdruck die Audio- oder Videodateien durch andere ersetzt werden.</li>
+						<li>Desweiteren war ein Start/Reset-Button von nöten, um das Spiel jederzeit von Neuem starten zu können.</li>
+						<li>Da Audiodateien und Videodateien vorerst getrennt voneinander betrachtet wurden, war es nun daran diese beiden einzelnen Elemente in einem Code zusammen zu bringen.
+							Dieser Schritt war im Nachhinein eher umwichtig, da im Endergebnis bei den Videos vorab per AfterEffects Audios hintelegt wurden. Dies hatte das Ganze etwas erleichtert, 
+							da so auch die Geräusche passend zu den Bewegungen des Monsters abgestimmt werden konnten und es am Ende nur noch eine Datei gab, die im Code eingefügt werden musste.</li>
+						<li>Somit war der nächste Schritt eben dieses Bearbeiten und das Einfügen der Animationsvideos des Design-Teams im Code.</li>
+						<li>Zuletzt wurden die provisorischen Buttons durch eine Vebindung zu einem externen Board ausgetauscht. Somit konnten durch richtige Knöpfe die gewünschten Stadien des Spiels ausgelöst werden:
+							Ein Start-Knopf zum Starten des Spiels, ein Knopf, bei dem das Knarren einer Diele zu hören ist, ein Knopf, der das Monster räustpern und den Spieler Angst haben lässt, ein Knopf, der das Monster aufweckt
+							und einer, bei dem das Spiel gewonnen wird. </li>
+					</ol>
+				</details>
+				<hr>
+				<details>
+					<summary>Code Lexikon</summary>
+					<ul>
+						<li><code>function preload()</code><p>Mithilfe dieser Funktion können Video - oder Audiodateien vorab geladen werden. Dies sorgt 
+							für einen reibungslosen Übergang beim Wechseln zwischen zwei Videos.</p></li>
+						<li><code>loadSound(); loadVideo()</code><p>Durch diese Befehle können Videos oder Audios in den Code integriert werden. In den Klammern 
+							wird der Pfad zu der entsprechenden Datei eingetragen.</p></li>
+						<li><code>currentVideo =</code><p>Durch diesen Befehl wird das aktuelle Video ausgewählt, das zu sehen sein soll.</p></li>
+						<li><code>video.hide()</code><p>Dieser Befehl bewirkt, dass das Video nicht sichtbar ist, solange es nicht aktiv aufgerufen wird.</p></li>
+						<li><code>video.stop()</code><p>Dieser Befehl stopt das Video.</p></li>
+						<li><code>video.loop()</code><p>Dieser Befehl lässt das Video in Dauerschleife laufen.</p></li>
+						<li><code>video.play(); sound.play()</code><p>Durch diesen Befehl wird das Video/Audio gestartet.</p></li>
+						<li><code>video.onended(); sound.onended()</code><p>Durch diese Befehle kann festgelegt werden was passiert, wenn das Video oder das Audio beendet ist.
+							In die Klammern wird der Name der Funktion eingetragen, die nach dem Beenden ausgeführt werden soll.</p></li>
+					</ul>
+				</details>
+				<hr>
+				<details>
+					<summary>Code (wichtigsten Stellen)</summary>
+					<h4><a href="https://github.com/hbk-bs/little-little-creatures/blob/main/server/public/sketch.js">Klicke hier</a>, um den kompletten Code zu sehen!</h4>
+					<p>Zu Beginn werden alle Video- und Audiodateien in der <code>function preload()</code> geladen. Zudem werden alle Dateien 
+					durch voher passend festgelegte Variablen benannt, um den Code übersichtlicher zu gestalten.</p>
+					<p><a href="https://github.com/hbk-bs/little-little-creatures/blob/main/server/public/sketch.js#L19-L27">Zum Code</a></p>
+					<p>In der <code>function setup()</code>werden vorerst alle Videodateien versteckt, damit nicht alle sofort sichtbar sind. Im weiteren Verlauf werden
+					die Dateien, die gezeigt werden sollen, im Code aufgerufen und sichtbar gemacht.</p>
+					<p><a href="https://github.com/hbk-bs/little-little-creatures/blob/main/server/public/sketch.js#L71-L79">Zum Code</a></p>
+					<p>Um per Knopfdruck ein Video abspielen zu können, wurden vorerst in der <i>index.html</i> provisorisch Buttons angelegt. Diese wurden entwickelt, um beim Klicken eine in <i>javascript</i> erstellte Funktion auszulösen.</p>
+					<pre><code> &ltbutton onclick="schnarchen()"&gtSchnarchen&lt/button&gt</code></pre>
+					<p>Die Funktion, die dann ausgeführt werden soll, legt das abzuspielende Video (<code>currentVideo=...</code>) fest, stopt eventuell noch laufende Videos (<code>video.stop()</code>)
+					und startet das abzuspielende Video (<code>currentVideo.play()</code>). Zu guter Letzt wird angegeben, welche andere Funktion, nach dem Beenden des Videos, ausgeführt werden soll (<code>currentVideo.onended(start);</code>).</p>
+					<p><a href="https://github.com/hbk-bs/little-little-creatures/blob/main/server/public/sketch.js#L101-L106">Zum Code</a></p>
+					<p>Nicht immer soll nach dem Beenden eines Videos zu einer anderen Funktion übergeleitet werden. Falls ein Spieler das Spiel verliert oder gewinnt, endet der Code und somit das Abspielen jeglicher Videos nach dem Beenden des Gewinner- oder Verlierer-Videos.</p>
+					<p><a href="https://github.com/hbk-bs/little-little-creatures/blob/main/server/public/sketch.js#L122">Zum Code</a></p>
+					<p>Zum Schluss wurden die Buttons durch Knöpfe, angeschlossen an einem externen Board, welches vom HardwareCode-Team programmiert wurde, ersetzt. Wird auf dem Board ein Knopf gedrückt, sendet dieses ein Signal (eine 1) zum Code. Ist ein Knopf nicht gedrückt, wird eine 0 gesendet.
+						Im Code wurden somit nun die Funktionen, mit den enstprechenden Stadien des Spiels, den einzelnen Knöpfen zugeordnet. Nun wird beim Drücken des Knopfes die passende Funktion ausgeführt.</p>
+					<p><a href="https://github.com/hbk-bs/little-little-creatures/blob/main/server/public/sketch.js#L50-L64">Zum Code</a></p> <br>
+					<figure>
+					<img id="verkleinertesBild" src="/assets/images/board.png" alt="Bild" onclick="vergroessern()">
+					<figcaption><h5>Board mit Knöpfen</h5></figcaption>
+					</figure>
+				</details>
+				<hr>
+				<details>
+					<summary>Ergebnis</summary>
+					<p><a href="/sleeping-uncle/index.html">Klicke hier</a> um das Ergebnis zu sehen!</p>
+				</details>
+				<hr>
+				</section>
+
+		</div>
+	
 	</body>
 </html>

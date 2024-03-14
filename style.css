@@ -1,0 +1,171 @@
+body {
+    background: linear-gradient(to top, #f7fbfc, #e6f3fa);
+    margin: 0 auto;
+    max-width: 70em;
+    font-family: Seravek, 'Gill Sans Nova', Ubuntu, Calibri, 'DejaVu Sans', source-sans-pro, sans-serif;
+    font-weight: normal;
+    line-height: 1.5;
+    padding: 4em 1em;
+    color: #555;
+}
+
+header {
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    line-height: 1.2;
+    padding: 20px;
+    text-align: center;
+    box-sizing: border-box;
+  }
+
+  h1 {
+  color: #035bb8;
+  font-size:90px;
+  }
+
+  strong {
+    color: #db1c15;
+    font-size: 20px;
+  }
+
+  h2 {
+    margin-top: 1em;
+    padding-top: 1em;
+    color: #555;
+  }
+
+  h3 {
+  color: #4e8dd1;
+  font-size:90px;
+  text-align: left;
+  }
+
+  h4 {
+    color: #035bb8;
+    font-size: 20px;
+  }
+
+  h5 {
+    margin-top: 1em;
+    padding-top: 1em;
+    color: #555;
+  }
+
+  h6 {
+    margin-top: 1em;
+    padding-top: 1em;
+    color: #555;
+    text-align: center;
+  }
+
+  i {
+    color: #035bb8;
+  }
+
+   .button-container {
+    display:flex;
+    /* place-items: center; */
+    justify-content: space-around;
+    padding: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .button-container button {
+    /* margin-right: 60px; */
+    border: none;
+    background: none;
+    padding: 10px 20px;
+  }
+
+  .button-container button img {
+    width: 320px; 
+    height: 320px; 
+  } 
+
+  .button-container button:hover img {
+    opacity: 0.8; 
+  }  
+  
+  .project {
+    display:flex;
+    place-items: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .project button {
+    margin-right: 50px;
+    font-size: 20px;
+    width: 350px;
+    background-color: #eee;
+    color: rgb(39, 39, 39);
+    border: none;
+    padding: 5px 10px;
+    border-radius: 2px;
+  }
+
+  a {
+    color: #e89a1c;
+  }
+  
+  img{
+    width: 20%;
+    height: 20%;
+  }
+
+  code,
+pre {
+  background: #ebebeb;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+code {
+  padding: 2px 4px;
+  vertical-align: text-top;
+  background-color: #ebebeb;
+  border-radius: 3px;
+  font-family: courier, monospace;
+  color: #2e2f32;
+}
+
+pre {
+  padding: 1em;
+  border-left: 2px solid #035bb8;
+
+}
+
+summary {
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  outline: none;
+  font-size: 17px;
+  transition: 0.4s;
+}
+
+.image-with-text {
+  display: flex;
+  align-items: center;
+}
+
+.image-with-text img {
+  margin-right: 10px;
+  width: 20%;
+  height: 20%;
+}
+
+#verkleinertesBild {
+  width: 20%;
+  height: 20%;
+}
+
+#verkleinertesBild:hover {
+  opacity: 0.8;
+}
+ 
+
